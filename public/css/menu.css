@@ -1,0 +1,49 @@
+#btn-menu-show {
+    z-index: 99;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#menu {
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 240px;
+    height: 100%;
+    box-shadow: black 0 0 10px;
+    border-right: 1px solid black;
+
+    background-color: #1e1e1e;
+    color: white;
+    left: -240px;
+    transition: all 0.5s ease;
+
+    text-transform: uppercase;
+}
+
+#menu ul {
+    padding: 0;
+}
+
+#menu a {
+    border-top: 1px solid black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid transparent;
+    box-sizing: border-box;
+    font-family: 'Open-sans', sans-serif;
+    line-height: 65px;
+    padding-left: 30px;
+    width: 100%;
+    height: 65px;
+    display: block;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+#menu .op-selected,
+#menu a:hover {
+    color: #b93632;
+    border-left: 5px solid #593632;
+}

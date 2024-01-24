@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'exo';
+    src: url('../../vendor/google_fonts/Exo-VariableFont_wght.ttf') format('truetype');
+}
+
+
+
+/* Works on Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgb(44, 44, 44);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(99, 99, 99);
+    border-radius: 20px;
+    border: 3px solid rgb(44, 44, 44);
+}
+
+
+
+@keyframes degrade-background {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+
+
+body {
+    font-family: 'exo', sans-serif;
+    background-color: #464646;
+    color: white;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+body,
+.bg-gradient {
+    background-image: linear-gradient(to right, rgba(0, 0, 69, 0.8), rgba(54, 0, 0, 0.8), rgba(1, 82, 1, 0.8));
+    background-size: 500% 100%;
+    animation: degrade-background 10s infinite alternate;
+}
+
+.bg-box {
+    /* background-color: #464646; */
+    background-color: #1e1e1e;
+}
+
+
+
+#about .box ul {
+    list-style-type: circle;
+}
+
+
+
+#projects .accordion-button,
+#projects .accordion-item {
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+}
+
+#projects .accordion-button:hover {
+    color: #593632;
+}
+
+#projects .accordion-button:focus {
+    box-shadow: none;
+}
+
+#projects ul {
+    list-style-type: circle;
+}
+
+
+
+#contact .box {
+    width: 400px;
+    min-width: 270px;
+}
+
+#contact .box a {
+    color: white;
+}
+
+#contact .box li a:hover {
+    color: #b93632;
+    border-left: 5px solid #593632;
+    padding-left: 4px;
+}
